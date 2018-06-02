@@ -1,0 +1,93 @@
+
+.services {
+	padding-top: 54px;
+	padding-bottom: 114px;
+	&_block {
+		margin: 0 auto;
+	}
+}
+
+.sb_ {
+	
+	&menu {
+		float: left;
+		width: 60px;
+		margin-top: 45px;
+		margin-left: 83px;
+		@media screen and (max-width: 768px){
+			display: flex;
+			float: none;
+			justify-content: space-around;
+			margin: 45px auto 0;
+			width: 300px;
+
+		}
+	}
+	
+	&menu {
+		button {
+			cursor: pointer;
+			color: @colorWhite;
+			font-size: 30px;
+			background-color: @colorLightGray;
+			border-radius: 50px;
+			border: none;
+			outline: none;
+			margin-bottom: 17px;
+			box-sizing: border-box;
+			width: 54px;
+			height: 54px;
+			transition: 0.5s ease-out 0.3s;
+			&:hover,
+			&.active {
+				background-color: @colorTurquoise;
+			}
+		}
+	}
+	
+	&item {
+		float: left;
+		margin-left: 38px;
+		margin-top: 14px;
+	}
+}
+
+.sbi_ {
+	&text {
+		float: left;
+		max-width: 455px;
+		p {
+			letter-spacing: 1px;
+			line-height: 2em;
+		}
+		h4+p {
+			padding-bottom: 15px;
+		}
+	}
+	&infographic {
+		float: right;
+		width: 140px;
+		position: relative;
+		P {
+			font-size: 25px;
+			text-align: center;
+			margin-top: 48px;
+		}
+	}
+	&ig1 {
+		background-color: @colorTurquoise;
+		z-index: 9;
+		border-radius: 50%;
+	}
+}
+
+.circle1{
+    height: 125px;
+    width: 125px;
+    background-color: @colorWhite;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+	z-index: 11;
+}

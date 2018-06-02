@@ -1,0 +1,126 @@
+.works {
+	padding-top: 56px;
+}
+
+.works_accordion {
+	max-width: 1370px;
+	margin: 60px auto 0;
+	ul {
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+		margin: 0;
+		padding: 0;
+		li {
+			background: no-repeat center/cover;
+			display: table-cell;
+			position: relative;
+			width: 16.6666%;
+			transition: all 0.5s ease;
+			div {
+				display: block;
+				overflow: hidden;
+				width: 100%;
+				a {
+					background: @colorBlack;
+					display: block;
+					height: 318px;
+					position: relative;
+					transition: all 0.2s ease;
+					opacity: 0.9;
+					h3 {
+						color: @colorWhite;
+						margin: 0;
+						width: 100%;
+						position: absolute;
+						top: 50%;
+					}
+				}
+			}
+			&:nth-child(1) {
+				background-image: url("../images/feature_work/else.jpg");
+			}
+			&:nth-child(2) {
+				background-image: url("../images/feature_work/else.jpg");
+			}
+			&:nth-child(3) {
+				background-image: url("../images/feature_work/else.jpg");
+            }
+            @media screen and (max-width: 768px) {
+                display: table;
+                position: relative;
+                table-layout: fixed;
+                width: 100%;
+                transition: none;
+            }
+            &:hover {
+                @media screen and (max-width: 768px) {
+                    display: table;
+                    position: relative;
+                    table-layout: fixed;
+                    width: 100%;
+                    transition: none;
+                }
+            }
+		}
+		&:hover {
+			li {
+                width: 10%;
+                @media screen and (max-width: 768px) {
+                    display: table;
+                    position: relative;
+                    table-layout: fixed;
+                    width: 100%;
+                    transition: none;
+                }
+				&:hover {
+                    width: 50%;
+                    @media screen and (max-width: 768px) {
+                        display: table;
+                        position: relative;
+                        table-layout: fixed;
+                        width: 100%;
+                        transition: none;
+                    }
+					a {
+						background: none;
+						h3 {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+    }
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+}
+
+.works_footer {
+	background: url(../images/background/background2.jpg) no-repeat center / cover; 
+	padding: 22px 0 28px;
+	
+	.button {
+		border-color: @colorWhite;
+		color: @colorWhite;
+		float: right;		
+		margin-right: 86px;
+		margin-top: 15px;
+		padding: 9px 23px;
+		&:hover {
+			border-color: @colorWhiteSmoke;
+			color: @colorWhiteSmoke;
+			transition: all 0.5s ease;
+		}
+	}
+
+	h3 {
+		color: @colorWhite;
+		float: left;
+		letter-spacing: 2px;
+		margin-left: 87px;
+		text-align: left;
+		text-transform: none;
+	}
+} 

@@ -1,0 +1,51 @@
+.impressed {
+    background: url("../images/background/background3.jpg") no-repeat center center/cover;
+    padding-bottom: 6px;
+    .flex {
+        flex-wrap: nowrap;
+    }
+    &_item{
+        margin-top: 54px;
+        margin-left: 14px;
+        max-width: 600px;
+        h3 {
+            color: @colorWhite;
+            text-align: left;
+        }
+        
+        p {
+            color: @colorWhiteSmoke;
+            text-align: left;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+            margin-top: 36px;
+            &:last-child {
+                line-height: 20px;
+                letter-spacing: 0.8px;
+                margin: 0;
+                text-transform: uppercase;
+                span {
+                    color: @colorTurquoise;
+                }
+            }
+
+        }
+        .name {
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            line-height: 20px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+    }
+    img {
+        height: 100%;
+        margin-top: -132px;
+        margin-right: -84px;
+        max-width: 600px;
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
+    }
+}

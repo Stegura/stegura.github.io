@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" />
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300|Source+Sans+Pro:300" rel="stylesheet">
+	<link rel="stylesheet" href="styles/pe-icon-7-stroke.min.css">
+	<script src="script/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+	<title>Bouncy</title>
+	<script src="script/less.min.js" ></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="clearfix">
+				<a href="/"><img src="images/logo_white.png" alt="logo" class="logo"></a>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#">Hello</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+							<a href="#">Team</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="h1_title">
+				<h1>We are code cafe</h1>
+				<h2>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</h2>
+			</div>
+			<a href="#" class="scroll_button"><span class="pe-7s-angle-down"></span></a>
+		</div>
+	</header>
+	<section class="about">
+		<div class="container flex">
+			<div class="about_text">
+				<h3>This is Bouncy</h3>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+				<a href="#" class="button">read more</a>	
+			</div>
+			<img src="images/ipad.png" class="ipad">
+		</div>
+	</section>
+	<section class="about_details">
+		<div class="container">
+			<div class="section_title">
+				<h3>DetailS ABOUT BOUNCy</h3>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			</div>
+			<div class="about_slider">
+				<div class="dot_menu">	
+					<button id="defaultOpenAbout" class="dot_link" onclick="openAboutItem(event, 'slide-1')"><span class="pe-7s-like"></span></button>
+  					<button class="dot_link" onclick="openAboutItem(event, 'slide-2')"><span class="pe-7s-mouse"></span></button>
+  				  	<button class="dot_link" onclick="openAboutItem(event, 'slide-3')"><span class="pe-7s-light"></span></button>
+  				</div>
+				<div id="slide-1" class="about_article">
+					<div class="article_title">			
+						<h4>Creative Ideas1</h4>
+					</div>
+					<div class="article_p flex">
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+					</div>
+				</div>
+				<div id="slide-2" class="about_article">
+					<div class="article_title">			
+						<h4>Creative Ideas2</h4>
+					</div>
+					<div class="article_p flex">
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+					</div>
+				</div>
+				<div id="slide-3" class="about_article">
+					<div class="article_title">			
+						<h4>Creative Ideas3</h4>
+					</div>
+					<div class="article_p flex">
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="works">
+		<div class="container">
+			<div class="section_title">
+				<h3>FEATURED PROJECTS</h3>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			</div>
+		</div>
+		<div class="works_accordion">
+			<ul>
+				<li>
+					<div>
+						<a href="#">
+							<h3>else</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">
+							<h3>vintage</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">
+							<h3>branding</h3>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="works_footer clearfix">
+			<div class="container">
+				<h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h3>
+				<a href="#" class="button">Sumbit Now</a>
+			</div>	
+		</div>
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="section_title">
+				<h3>OUR SERVICES</h3>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			</div>
+			<div class="services_block clearfix">
+				<div class="sb_menu">
+					<button class="sbm_link" onclick="openServiceItem(event, 'Tools')"><span class="pe-7s-tools"></span></button>
+					<button id="defaultOpenService" class="sbm_link" onclick="openServiceItem(event, 'graphicDesign')"><span class="pe-7s-paint"></span></button>
+					<button class="sbm_link" onclick="openServiceItem(event, 'Joy')"><span class="pe-7s-joy"></span></button>
+					<button class="sbm_link" onclick="openServiceItem(event, 'Plug')"><span class="pe-7s-plug"></span></button>
+				</div>
+				<div class="sb_item" id="Tools">
+					<div class="sbi_text">
+						<h4>Captcha 1</h4>
+						<p>At vero eos et accusamus et iusto odio</p>
+						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+					<div class="sbi_infographic">
+	
+					</div>
+				</div>
+				<div class="sb_item" id="graphicDesign">
+					<div class="sbi_text">
+						<h4>Graphic Design</h4>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+						
+					</div>
+					<div class="sbi_infographic flex">
+						<canvas height="140" width="140" id="sbi_ig1"></canvas>
+						<div class="circle1"><p>80<span>%</span></p></div>
+					</div>
+				</div>
+				<div class="sb_item clearfix" id="Joy">
+					<div class="sbi_text">
+						<h4>Captcha 3</h4>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,</p>
+					</div>
+					<div class="sbi_infographic">
+						
+					</div>
+				</div>
+				<div class="sb_item" id="Plug">
+					<div class="sbi_text">
+						<h4>Captcha 4</h4>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+					</div>
+					<div class="sbi_infographic">
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="impressed">
+		<div class="container flex">
+			<div class="impressed_item">
+				<h3>Impressed ?</h3>
+				<p>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+				</p>
+				<p class="name">- Abdullah Noman</p>
+				<p>Creatice Director,<span class="cc">Code Cafe</span></p>
+			</div>
+			<img src="images/mac.png" alt="">
+		</div>
+	</section>
+	<section class="portfolio">
+		<div class="container">
+			<div class="section_title">
+				<h3>The portfolio</h3>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			</div>
+			<div class="gallery">
+				<div class="gallery_menu">
+					<ul>
+						<li>
+							<a href="#" class="gallery_menu_button">All </a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">Print</a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">Identity</a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">Branding</a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">Web</a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">HTML</a>
+						</li>
+						<li>
+							<a href="#" class="gallery_menu_button">Wordpress</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="gallery_album">
+					<div class="gallery_album_item" >
+						<img src="images/portfolio/11.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/21.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/31.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/12.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/22.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/32.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/13.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/23.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/33.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/14.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/24.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+					<div class="gallery_album_item">
+						<img src="images/portfolio/34.jpg" alt="">
+						<div class="item_hover">
+							<h4>Title here</h4>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							<a href="#" class="item_hover_button"><span class="pe-7s-link"></span></a>
+							<a href="#" class="item_hover_button"><span class="pe-7s-like"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script/serviceAcordion.js"></script>
+	<script src="script/aboutAcordion.js"></script>
+	<script src="script/circularProgressBar.js"></script>
+</body>
+</html>
