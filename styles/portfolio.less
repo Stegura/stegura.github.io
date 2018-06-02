@@ -25,21 +25,50 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 930px;
+        height: 960px;
         max-width: 1140px;
         margin: 74px auto 0;
         &_item {
             position: relative;
             overflow: hidden;
-            img {
-                width: 96%;
-            }
+            width: 274px;
             .item_hover {
-                background-color: @colorBlack;
-                opacity: 0.9;
+                //background-color: @colorBlack;
+                height: 100%;
+                //opacity: 0.9;
+                box-sizing: border-box;
+                width: 100%;
                 position: absolute;
                 top: 100%;
-                height: 100%;
+                //width: 270px;
+                &_text {
+                    margin: auto;
+                    width: 200px;
+                }
+                h4 {
+                    color: @colorTurquoise;
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                    margin-bottom: 12%;
+                    &:after {
+                        border: 1px solid;
+                        content:'';
+                        display: block;
+                        margin-top: 16px;
+                        width: 22px;
+                    }
+                }
+                p {
+                    color: @colorCasper;
+                    font-size: 12px;
+                    line-height: 22px;
+                    margin-bottom: 29%;
+                    width: 206px;
+                }
+                a {
+                    color: @colorWhite;
+                    text-decoration: none;
+                }
             }
             &:hover {
                 .item_hover {
@@ -48,4 +77,19 @@
             }
         }
     }
+}
+
+.item_hover_button {
+    background: @colorBlack;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 6px;
+    
 }
