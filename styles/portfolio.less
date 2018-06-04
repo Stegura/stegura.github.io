@@ -25,23 +25,72 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 960px;
-        max-width: 1140px;
+        height: 950px;
+        max-width: 1110px;
         margin: 74px auto 0;
         &_item {
             position: relative;
             overflow: hidden;
-            width: 274px;
-            .item_hover {
-                //background-color: @colorBlack;
-                height: 100%;
-                //opacity: 0.9;
+            .item_pic {
                 box-sizing: border-box;
-                width: 100%;
+                width: 270px;
+                &_1 {
+                    background: url("../images/portfolio/11.jpg");
+                    height: 360px;
+                }
+                &_2 {
+                    background: url("../images/portfolio/21.jpg");
+                    height: 360px;
+                }
+                &_3 {
+                    background: url("../images/portfolio/31.jpg");
+                    height: 210px;
+                }
+                &_4 {
+                    background: url("../images/portfolio/12.jpg");
+                    height: 230px;
+                }
+                &_5 {
+                    background: url("../images/portfolio/22.jpg");
+                    height: 344px;
+                }
+                &_6 {
+                    background: url("../images/portfolio/32.jpg");
+                    height: 356px;
+                }
+                &_7 {
+                    background: url("../images/portfolio/13.jpg");
+                    height: 302px;
+                }
+                &_8 {
+                    background: url("../images/portfolio/23.jpg");
+                    height: 374px;
+                }
+                &_9 {
+                    background: url("../images/portfolio/33.jpg");
+                    height: 254px;
+                }
+                &_10 {
+                    background: url("../images/portfolio/14.jpg");
+                    height: 360px;
+                }
+                &_11 {
+                    background: url("../images/portfolio/24.jpg");
+                    height: 270px;
+                }
+                &_12 {
+                    background: url("../images/portfolio/34.jpg");
+                    height: 300px;
+                }          
+            }
+            .item_hover {
+                background-color: rgba(0, 0, 0, 0.8);
+                height: 100%;
+                box-sizing: border-box;
+                width: 270px;
                 position: absolute;
                 top: 100%;
-                //width: 270px;
-                &_text {
+                .item_hover_text {
                     margin: auto;
                     width: 200px;
                 }
@@ -80,7 +129,7 @@
 }
 
 .item_hover_button {
-    background: @colorBlack;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     box-sizing: border-box;
     display: inline-block;
