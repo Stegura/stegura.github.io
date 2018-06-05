@@ -84,23 +84,25 @@
                 }          
             }
             .item_hover {
+                align-items: center;
                 background-color: rgba(0, 0, 0, 0.8);
-                height: 100%;
                 box-sizing: border-box;
-                width: 270px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-around;
+                padding: 24%;
                 position: absolute;
                 top: 100%;
-                .item_hover_text {
-                    margin: auto;
-                    width: 200px;
-                }
+                width: 270px;
                 h4 {
                     color: @colorTurquoise;
                     text-transform: uppercase;
                     letter-spacing: 0.15em;
-                    margin-bottom: 12%;
+                    width: 200px;
+                    margin: 0;
                     &:after {
-                        border: 1px solid;
+                        border: 0.5px solid;
                         content:'';
                         display: block;
                         margin-top: 16px;
@@ -111,12 +113,14 @@
                     color: @colorCasper;
                     font-size: 12px;
                     line-height: 22px;
-                    margin-bottom: 29%;
                     width: 206px;
                 }
                 a {
                     color: @colorWhite;
                     text-decoration: none;
+                }
+                .buttons {
+                    width: 200px;
                 }
             }
             &:hover {
@@ -133,12 +137,10 @@
     border-radius: 50%;
     box-sizing: border-box;
     display: inline-block;
-    width: 24px;
     height: 24px;
-    padding: 0;
     line-height: 24px;
+    margin-right: 6px;
+    padding: 0;
     text-align: center;
-    margin-right: 10px;
-    margin-left: 6px;
-    
+    width: 24px;
 }
