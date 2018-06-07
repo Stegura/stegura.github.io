@@ -228,34 +228,17 @@
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 			</div>
 			<div class="gallery">
-				<div class="gallery_menu">
-					<ul>
-						<li>
-							<a href="#" class="gallery_menu_button">All Works</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">Print</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">Identity</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">Branding</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">Web</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">HTML</a>
-						</li>
-						<li>
-							<a href="#" class="gallery_menu_button">Wordpress</a>
-						</li>
-
-					</ul>
+				<div id="gallery_menu">
+					<button class="gallery_menu_button active_button" onclick="filterSelection('all')">All Works</button>
+					<button class="gallery_menu_button" onclick="filterSelection('print')">Print</button>
+					<button class="gallery_menu_button" onclick="filterSelection('identity')">Identity</button>
+					<button class="gallery_menu_button" onclick="filterSelection('branding')">Branding</button>
+					<button class="gallery_menu_button" onclick="filterSelection('web')">Web</button>
+					<button class="gallery_menu_button" onclick="filterSelection('HTML')">HTML</button>
+					<button class="gallery_menu_button" onclick="filterSelection('wordpress')">Wordpress</button>
 				</div>
 				<div class="gallery_album">
-					<div class="gallery_album_item" >
+					<div class="gallery_album_item print identity" >
 						<div class="item_pic item_pic_1"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -270,7 +253,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item identity branding">
 						<div class="item_pic item_pic_2"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -285,7 +268,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item branding web">
 						<div class="item_pic item_pic_3"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -300,7 +283,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item web">
 						<div class="item_pic item_pic_4"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -330,7 +313,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item print HTML">
 						<div class="item_pic item_pic_6"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -345,7 +328,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item identity">
 						<div class="item_pic item_pic_7"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -360,7 +343,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item branding">
 						<div class="item_pic item_pic_8"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -375,7 +358,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item web wordpress">
 						<div class="item_pic item_pic_9"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -390,7 +373,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item HTML">
 						<div class="item_pic item_pic_10"></div>
 						<div class="item_hover">	
 							<h4>Title here</h4>
@@ -405,7 +388,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item wordpress">
 						<div class="item_pic item_pic_11"></div>
 						<div class="item_hover">	
 							<h4>Title here</h4>
@@ -420,7 +403,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery_album_item">
+					<div class="gallery_album_item print HTML">
 						<div class="item_pic item_pic_12"></div>
 						<div class="item_hover">
 							<h4>Title here</h4>
@@ -443,5 +426,6 @@
 	<script src="script/aboutAcordion.js"></script>
 	<script src="script/jquery-1.10.2.min.js"></script>
 	<script src="script/circularProgressBar.js"></script>
+	<script src="script/filterSelection.js"></script>
 </body>
 </html>

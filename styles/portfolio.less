@@ -3,23 +3,7 @@
 }
 .gallery {
     margin-top: 74px;
-    &_menu {
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 546px;
-            margin: 0 auto;
-            li {
-                display: block;
-                transition: all 0.5s ease;
-                a {
-                    color: @colorGray;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
+    
     &_album {
         display: flex;
         flex-direction: column;
@@ -31,6 +15,7 @@
         &_item {
             position: relative;
             overflow: hidden;
+            display: none;
             .item_pic {
                 box-sizing: border-box;
                 width: 270px;
@@ -129,6 +114,27 @@
                 }
             }
         }
+        .show {
+            display: block;
+        }
+    }
+}
+
+#gallery_menu {
+    display: flex;
+    justify-content: space-around;
+    max-width: 612px;
+    margin: 0 auto;
+    .gallery_menu_button {
+        background: none;
+        border: none;
+        color: @colorGray;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    .active_button {
+        color: red;
     }
 }
 
