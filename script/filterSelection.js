@@ -2,12 +2,18 @@ filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("gallery_album_item");
-  if (c == "all") c = "";
+  if (c == "all") {
+    c = "";
+    document.getElementById("gallery_album").style.flexDirection="column";
+    document.getElementById("gallery_album").style.justifyContent="space-between";} else {
+      document.getElementById("gallery_album").style.flexDirection="row";
+      document.getElementById("gallery_album").style.justifyContent="center";
+    } 
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-  }
+    }
 }
 
 // Show filtered elements

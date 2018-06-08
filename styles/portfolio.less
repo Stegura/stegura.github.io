@@ -2,72 +2,203 @@
     padding-top: 58px;
 }
 .gallery {
-    margin-top: 74px;
+    margin-top: 64px;
     
     &_album {
+        align-items: center;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
-        height: 950px;
-        max-width: 1110px;
-        margin: 74px auto 0;
+        margin: 60px auto 0;
+        max-width: 1120px;
+        max-height: 960px;
+            .item_pic {
+                &_1 {
+                    background: url("../images/portfolio/11.jpg") center/cover;
+                    height: 360px;
+                }
+                &_2 {
+                    background: url("../images/portfolio/21.jpg") center/cover;
+                    height: 360px;
+                }
+                &_3 {
+                    background: url("../images/portfolio/31.jpg") center/cover;
+                    height: 210px;
+                }
+                &_4 {
+                    background: url("../images/portfolio/12.jpg") center/cover;
+                    height: 230px;
+                }
+                &_5 {
+                    background: url("../images/portfolio/22.jpg") center/cover;
+                    height: 344px;
+                }
+                &_6 {
+                    background: url("../images/portfolio/32.jpg") center/cover;
+                    height: 356px;
+                }
+                &_7 {
+                    background: url("../images/portfolio/13.jpg") center/cover;
+                    height: 302px;
+                }
+                &_8 {
+                    background: url("../images/portfolio/23.jpg") center/cover;
+                    height: 374px;
+                }
+                &_9 {
+                    background: url("../images/portfolio/33.jpg") center/cover;
+                    height: 254px;
+                }
+                &_10 {
+                    background: url("../images/portfolio/14.jpg") center/cover;
+                    height: 360px;
+                }
+                &_11 {
+                    background: url("../images/portfolio/24.jpg") center/cover;
+                    height: 270px;
+                }
+                &_12 {
+                    background: url("../images/portfolio/34.jpg") center/cover;
+                    height: 300px;
+                }   
+            }       
+            @media screen and (max-width: 1119px) {
+                max-height: 1300px;
+                max-width: 860px;
+                .item_pic {
+                    &_1 {
+                        order: -1;
+                    }
+                    &_2 {
+                        order: 0;
+                    }
+                    &_3 {
+                        order: -1;
+                    }
+                    &_4 {
+                        order: 0;
+                    }
+                    &_5 {
+                        order: 0;
+                    }
+                    &_6 {
+                        order: 1;
+                    }
+                    &_7 {
+                        order: 0;
+                    }
+                    &_8 {
+                        order: -1;
+                    }
+                    &_9 {
+                        order: 1;
+                    }
+                    &_10 {
+                        order: 1;
+                    }
+                    &_11 {
+                        order: 1;
+                    }
+                    &_12 {
+                        order: -1;
+                    } 
+            }
+            @media screen and (max-width: 859px) {
+                max-height: 2600px;
+                max-width: 570px;
+                .item_pic {
+                    &_1 {
+                        order: -1;
+                    }
+                    &_2 {
+                        order: 1;
+                    }
+                    &_3 {
+                        order: -1;
+                    }
+                    &_4 {
+                        order: 1;
+                    }
+                    &_5 {
+                        order: 1;
+                    }
+                    &_6 {
+                        order: -1;
+                    }
+                    &_7 {
+                        order: -1;
+                    }
+                    &_8 {
+                       order: -1;
+                    }
+                    &_9 {
+                        order: 1;
+                    }
+                    &_10 {
+                        order: 1;
+                    }
+                    &_11 {
+                        order: -1;
+                    }
+                    &_12 {
+                        order: 1;
+                    }   
+                }
+            }   
+            }
+            @media screen and (max-width: 859px) {
+            max-height: 1932px;
+            max-width: 564px;
+            .item_pic {
+                &_1 {
+                    order: -1;
+                }
+                &_2 {
+                    order: 1;
+                }
+                &_3 {
+                    order: -1;
+                }
+                &_4 {
+                    order: 1;
+                }
+                &_5 {
+                    order: 1;
+                }
+                &_6 {
+                    order: -1;
+                }
+                &_7 {
+                    order: -1;
+                }
+                &_8 {
+                   order: -1;
+                }
+                &_9 {
+                    order: 1;
+                }
+                &_10 {
+                    order: 1;
+                }
+                &_11 {
+                    order: -1;
+                }
+                &_12 {
+                    order: 1;
+                }   
+            }
+            }
+            @media screen and (max-width: 590px) {
+                max-height: 3840px;
+            }
+
         &_item {
             position: relative;
             overflow: hidden;
             display: none;
-            .item_pic {
-                box-sizing: border-box;
-                width: 270px;
-                &_1 {
-                    background: url("../images/portfolio/11.jpg");
-                    height: 360px;
-                }
-                &_2 {
-                    background: url("../images/portfolio/21.jpg");
-                    height: 360px;
-                }
-                &_3 {
-                    background: url("../images/portfolio/31.jpg");
-                    height: 210px;
-                }
-                &_4 {
-                    background: url("../images/portfolio/12.jpg");
-                    height: 230px;
-                }
-                &_5 {
-                    background: url("../images/portfolio/22.jpg");
-                    height: 344px;
-                }
-                &_6 {
-                    background: url("../images/portfolio/32.jpg");
-                    height: 356px;
-                }
-                &_7 {
-                    background: url("../images/portfolio/13.jpg");
-                    height: 302px;
-                }
-                &_8 {
-                    background: url("../images/portfolio/23.jpg");
-                    height: 374px;
-                }
-                &_9 {
-                    background: url("../images/portfolio/33.jpg");
-                    height: 254px;
-                }
-                &_10 {
-                    background: url("../images/portfolio/14.jpg");
-                    height: 360px;
-                }
-                &_11 {
-                    background: url("../images/portfolio/24.jpg");
-                    height: 270px;
-                }
-                &_12 {
-                    background: url("../images/portfolio/34.jpg");
-                    height: 300px;
-                }          
-            }
+            box-sizing: border-box;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 270px;
             .item_hover {
                 align-items: center;
                 background-color: rgba(0, 0, 0, 0.8);
@@ -122,19 +253,33 @@
 
 #gallery_menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     max-width: 612px;
     margin: 0 auto;
     .gallery_menu_button {
         background: none;
         border: none;
+        box-sizing: border-box;
         color: @colorGray;
         cursor: pointer;
+        height: 44px;
+        line-height: 44px;
         text-transform: capitalize;
+        &:hover {
+            border-bottom: 2px solid @colorTurquoise;
+        }
+        @media screen and (max-width: 570px) {
+            max-width: 845px;
+            max-height: 1416px;
+        }
     }
-
-    .active_button {
-        color: red;
+    .active_button:after {
+        border-top: 2px solid @colorTurquoise;
+        content:'';
+        display: block;
+        margin: -2px auto 0;
+        width: 50%;
     }
 }
 
