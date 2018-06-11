@@ -10,26 +10,19 @@ var diff;   // find the different between current value (no) and trageted value 
                 
         counter.clearRect(0,0,cw,ch);   // Clear canvas every time when function is call
                    
-        counter.lineWidth = 15;     // size of stroke
+        counter.lineWidth = 10;     // size of stroke
                     
         counter.fillStyle = '#81868e';     // color that you want to fill in counter/circle
                     
-        counter.strokeStyle = '#047378';    // Stroke Color
-                    
-        /*counter.textAlign = 'center';
-                    
-        counter.font = "25px Open Sans";  */  //set font size and face
-                    
-        /*counter.fillText(no+'%',70,80); */      //fillText(text,x,y);
-                    
+        counter.strokeStyle = '#047378';    // Stroke Color                    
         counter.beginPath();
-        counter.arc(70,70,65,diff/10+pointToFill,pointToFill);    //arc(x,y,radius,start,stop)
+        counter.arc(65,65,60,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
                     
         counter.stroke();   // to fill stroke
             
             // now add condition
             
-            if(no >= 90)
+            if(no >= 80)
             {
                 clearTimeout(fill);     //fill is a variable that call the function fillcounter()
             }
@@ -38,4 +31,4 @@ var diff;   // find the different between current value (no) and trageted value 
         
         //now call the function
         
-        var fill = setInterval(fillCounter,80);     //call the fillCounter function after every 50MS
+        var fill = setInterval(fillCounter,90);     //call the fillCounter function after every 50MS

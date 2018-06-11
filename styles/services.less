@@ -68,26 +68,27 @@
 		float: right;
 		width: 140px;
 		position: relative;
+		canvas {
+			background-color: @colorTurquoise;
+			z-index: 9;
+			border-radius: 50%;
+			transform: scale(-1, 1);
+		}
 		P {
 			font-size: 25px;
 			text-align: center;
 			margin-top: 48px;
 		}
 	}
-	&ig1 {
-		background-color: @colorTurquoise;
-		z-index: 9;
-		border-radius: 50%;
-	}
 }
 
 .circle1{
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 120px;
     background-color: @colorWhite;
     border-radius: 50%;
     position: absolute;
-    left: 5%;
-    top: 5%;
+    left: 4%;
+    top: 4%;
 	z-index: 11;
 }

@@ -1,0 +1,106 @@
+.team {
+    padding-top: 56px;
+    &_slider {
+        max-width: 1046px;
+        margin: 56px auto;
+        &_menu {
+            display: flex;
+            margin: 60px auto;
+            justify-content: space-around;
+            width: 60px;
+        }
+        &_selectButton {
+            background: none;
+            box-sizing: border-box;
+            border: 1px solid @colorTurquoise;
+            border-radius: 50%;
+            height: 10px;
+            padding: 0;
+            width: 10px;
+        }
+        .active {
+            background-color: @colorTurquoise;
+        }
+    }
+    &_member {
+        display: flex;
+        justify-content: space-between;
+        &_photo {
+            height: 366px;
+            position: relative;
+            width: 288px;
+            overflow: hidden;
+            &_hover {
+                align-items: center;
+                background-color: rgba(255,255,255, 0.7);
+                display: flex;
+                justify-content: center;
+                height: 348px;
+                margin: 8px auto;
+                width: 270px;
+                position: absolute;
+                top: 100%;
+            }
+            &:hover {
+                .team_member_photo_hover {
+                    top: 0;
+                    left: 8px;
+                }
+            }
+        }
+        &_social_network {
+            background-color: rgba(0,0,0, 0.7); 
+            border-radius: 50%;
+            box-sizing: border-box;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 30px;
+            margin-left: 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                color: rgba(255,255,255, 0.7);
+                font-size: 20px;
+            }
+        }
+        &_discript {
+            max-width: 468px;
+            text-align: right;
+            h4 {
+                border-right: 2px solid @colorTurquoise;
+                text-align: right;
+                margin-right: 18px;
+                padding-right: 40px;
+                span {
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                padding-right: 66px;
+            }
+        }
+    } 
+    #team_member_ {
+        &1 {
+           .team_member_photo {
+               background: url(../images/team/teamMember1.jpg) center / cover;
+           } 
+        }
+        &2 {
+            .team_member_photo {
+                background: url(../images/team/teamMember2.jpg) center / cover;
+            } 
+        }
+         &3 {
+           .team_member_photo {
+               background: url(../images/team/teamMember3.jpg) center / cover;
+           } 
+        }
+    }
+}
