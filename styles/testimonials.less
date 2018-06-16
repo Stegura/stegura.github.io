@@ -1,0 +1,62 @@
+.testimonials {
+    background-color: @colorWhiteSmoke;
+    padding: 56px 0 40px;
+    
+    &_block {
+        background-color: @colorWhite;
+        margin: 56px auto;
+        max-width: 1146px;
+        padding-bottom: 60px;
+        &_menu {
+            display: flex;
+            margin: -14px auto 0;
+            justify-content: space-around;
+            width: 60px;
+        }
+        &_selectButton {
+            background: none;
+            box-sizing: border-box;
+            border: 1px solid @colorTurquoise;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+        }
+        .active {
+            background-color: @colorTurquoise;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 994px;
+            padding: 40px 0 60px;           
+            &_avatar {
+                background: url("../images/testimonials/avatar1.jpg") center / cover;
+                border-radius: 50%;
+                height: 130px;
+                margin-top: 12px;
+                width: 130px;
+            }
+            &_client {
+                max-width: 792px;
+                &_feadback {
+                    line-height: 28px;
+                }
+                &_name {
+                color: @colorTurquoise;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 30px;
+                margin: 0;
+                text-transform: uppercase;
+                }
+                &_headline {
+                    letter-spacing: 0.25px;
+                    line-height: 18px;
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

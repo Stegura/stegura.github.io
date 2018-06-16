@@ -1,4 +1,4 @@
-function openTeamItem(event, aboutName) {
+function openTeamItem(event, idName) {
     var i, team_member, selectButton;
     team_member = document.getElementsByClassName("team_member");
     for (i = 0; i < team_member.length; i++) {
@@ -8,7 +8,7 @@ function openTeamItem(event, aboutName) {
     for (i = 0; i < selectButton.length; i++) {
         selectButton[i].className = selectButton[i].className.replace(" active", "");
     }
-    document.getElementById(aboutName).style.display = "flex";
+    document.getElementById(idName).style.display = "flex";
     event.currentTarget.className += " active";
 }
 
