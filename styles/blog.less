@@ -1,0 +1,88 @@
+.blog {
+    background: url("../images/background/background6.jpg") center / cover;
+    padding: 80px 0 100px;
+    .container {
+        position: relative;
+    }
+    &_item {
+        margin-left: 6px;
+        max-width: 1150px;
+        &_title {
+            h3 {
+                color: @colorWhite;
+                text-align: left;
+                margin: 0;
+            }
+            p {
+                color: @colorCasper;
+                text-align: left;
+                margin: 20px 0 0 4px;
+                max-width: 470px;
+            }
+        }
+        
+        &_content {
+            margin: 94px 0 0 72px;
+            max-width: 600px;
+            &-video {
+                margin: 28px auto 0;
+                max-width: 678px;
+                video {
+                    max-width: 100%;
+                }
+            }
+            &_title {
+                color: @colorWhite;
+                margin: 0;
+            }
+            &_author {
+                text-transform: uppercase;
+                margin: 6px 0;
+                span {
+                    color: @colorTurquoise;
+                }
+            }
+            &_interaction-count {
+                color: @colorCharcoal;
+                font-size: 14px;
+                font-family: 'Source Sans Pro', sans-serif;
+                letter-spacing: 1.35px;
+                line-height: 22px;
+            }
+            &_text {
+                color: @colorLightGray;
+                margin: 48px 0 44px;
+            }
+            &_more-btn {
+                color: @colorCasper;
+                text-decoration: none;
+                &:hover {
+                    color: @colorTurquoise;
+                }
+            }
+        }
+        
+        &_menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 60px;
+            width: 10px;
+            position: absolute;
+            top: 47%;
+            right: 2%;
+            .active {
+                background-color: @colorCasper;
+            }
+        }
+        &_selectButton {
+            background: none;
+            box-sizing: border-box;
+            border: 1px solid @colorCasper;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+        }
+        
+    }
+}
