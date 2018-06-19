@@ -1,4 +1,4 @@
-@colorForTeamHover: @colorCyanBluishWhite;
+@colorForTeamHover: @colorCasper;
 
 .team {
     padding-top: 56px;
@@ -32,61 +32,69 @@
             position: relative;
             width: 288px;
             overflow: hidden;
+            flex-shrink: 0;
             &_hover {
                 height: 348px;
                 margin: 8px auto;
                 width: 270px;
                 position: absolute;
                 top: 100%;
-                opacity: 0.87;
+                opacity: 0.9;
                 .hole {
                     &_1 {
                         position: absolute;
                         top: 158px;
-                        left: 60px;
+                        left: 72px;
+                        &::before {
+                            content: "";
+                            background-color: @colorForTeamHover;
+                            width: 270px;
+                            height:158px;
+                            position: absolute;
+                            top: -158px;
+                            left: -72px;
+                        }
+                        &::after {
+                            content: "";
+                            background-color: @colorForTeamHover;
+                            width: 72px;
+                            height: 32px;
+                            position: absolute;
+                            left: -72px;
+                        }
                       }
                     &_2 {
                         position: absolute;
                         top: 158px;
-                        left: 108px;
+                        left: 119px;
                     }
                     &_3 {
                         position: absolute;
                         top: 158px;
-                        left: 158px;
-                    }
-                } 
-                  .cover {
-                    background-color: @colorForTeamHover;
-                    width: 270px;
-                    height:158px;
-                    &_1 {
-                        background-color: @colorForTeamHover;
-                        width: 270px;
-                        height:158px;
-                        position: absolute;
-                        bottom: 0;
-                        &1 {
+                        left: 167px;
+                        &::before {
+                            content: "";
                             background-color: @colorForTeamHover;
-                            width: 58px;
-                            height:32px;
+                            width: 71px;
+                            height: 32px;
                             position: absolute;
-                            top: -32px;
-                            &1 {
-                                background-color: @colorForTeamHover;
-                                width: 64px;
-                                height:32px;
-                                position: absolute;
-                                left: 206px;
-                            }
+                            left: 32px;
+                        }
+                        &::after {
+                            content: "";
+                            background-color: @colorForTeamHover;
+                            width: 270px;
+                            height:158px;
+                            position: absolute;
+                            top: 32px;
+                            left: -167px;
                         }
                     }
-                  }
+                } 
             }
             &:hover {
                 .team_member_photo_hover {
                     top: 0;
-                    left: 8px;
                 }
             }
         }
