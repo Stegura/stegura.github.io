@@ -1,0 +1,55 @@
+footer {
+    background-color: @colorWhiteSmoke;
+    padding: 80px 0 90px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 320px;
+    img {
+        margin: 0 auto 24px;
+        width: 112px;
+    }
+    p {
+        color: @colorLightGray;
+        margin: 0 auto 40px;
+        text-align: center;
+        width: 234px;
+    }
+    .social-links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 172px;
+        &_item {
+            background-color: @colorTurquoise;
+            border-radius: 50%;
+            box-sizing: border-box;
+            height: 26px;
+            text-align: center;
+            width: 26px;
+            a {
+                color: @colorWhite;
+                font-size: 14px;
+                line-height: 26px;
+                text-decoration: none;
+            }
+        }
+        .facebook {
+            background-color: @colorFacebook;
+        }
+        .twitter {
+           background-color: @colorTwitter;
+        }
+        .linkedIn {
+            background-color: @colorLinkedIn;
+        }
+        .instagram {
+            background-color: @colorInstagram;
+        }
+        .vimeo {
+            background-color: @colorVimeo;
+        }
+    }
+}
