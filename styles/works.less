@@ -106,7 +106,9 @@
 .works_footer {
 	background: url(../images/background/background2.jpg) no-repeat center / cover; 
 	padding: 22px 0 28px;
-	
+	@media screen and (max-width: 956px) {
+		padding: 10px 0;
+	}
 	.button {
 		float: right;		
 		margin-right: 86px;
@@ -118,8 +120,21 @@
 				color: @colorGray;
 			}
 		}
+		@media screen and (max-width: 1065px) {
+			margin-right: 30px;
+		}
+		@media screen and (max-width: 956px) {
+			margin-right: 86px;
+			margin-top: 26px;
+		}
+		@media screen and (max-width: 770px) {
+			margin-right: 10px;
+		}
+		@media screen and (max-width: 646px) {
+			float: none;
+			margin: 0 auto;
+		}
 	}
-
 	h3 {
 		color: @colorWhite;
 		float: left;
@@ -127,5 +142,22 @@
 		margin-left: 87px;
 		text-align: left;
 		text-transform: none;
+		@media screen and (max-width: 1065px) {
+			margin-left: 30px;
+		}
+		@media screen and (max-width: 956px) {
+			margin-left: 87px;
+			width: 420px;
+		}
+		@media screen and (max-width: 770px) {
+			margin-left: 10px;
+		}
+		@media screen and (max-width: 646px) {
+			float: none;
+			margin: 0 auto 16px;
+			text-align: center;
+			width: 100%;
+
+		}
 	}
 } 

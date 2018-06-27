@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="styles/pe-icon-7-stroke.min.css">
 	<link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
 	<title>Bouncy</title>
-	<script src="script/less.min.js" ></script>
+	<script src="script/less.min.js"></script>
 </head>
 <body>
 	<header>
@@ -160,7 +160,7 @@
 				<h3>OUR SERVICES</h3>
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 			</div>
-			<div class="services_block clearfix">
+			<div class="services_block">
 				<div class="sb_menu">
 					<button class="sbm_link" onclick="openServiceItem(event, 'Tools')"><span class="pe-7s-tools"></span></button>
 					<button id="defaultOpenService" class="sbm_link" onclick="openServiceItem(event, 'graphicDesign')"><span class="pe-7s-paint"></span></button>
@@ -173,30 +173,88 @@
 						<p>At vero eos et accusamus et iusto odio</p>
 						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 					</div>
-					<div class="sbi_infographic">
-	
+					<div class="sbi_bars">
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig6" class="sbi_progressBar">75</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">75<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Branding
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig5" class="sbi_progressBar">10</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">10<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Web Design
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig4" class="sbi_progressBar">95</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">95<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								UI/UX
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="sb_item" id="graphicDesign">
+				<div class="sb_item" id="graphicDesign">					
 					<div class="sbi_text">
 						<h4>Graphic Design</h4>
 						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
 						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-						
 					</div>
-					<div class="sbi_infographic">
-						<canvas height="130" width="130" id="sbi_ig1"></canvas>
-						<div class="circle1"><p>80<span>%</span></p></div>
-					</div>
+					<div class="sbi_bars">
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig3" class="sbi_progressBar">60</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">60<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Branding
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig2" class="sbi_progressBar">20</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">20<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Web Design
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig1" class="sbi_progressBar">80</canvas>
+							<div class="circle1"><p  class="sbi_infographic_percent">80<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								UI/UX
+							</p>
+						</div>
+					</div>	
 				</div>
-				<div class="sb_item clearfix" id="Joy">
+				<div class="sb_item" id="Joy">
 					<div class="sbi_text">
 						<h4>Captcha 3</h4>
 						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
 						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,</p>
 					</div>
-					<div class="sbi_infographic">
-						
+					<div class="sbi_bars">
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig12" class="sbi_progressBar">45</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">45<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Branding
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig11" class="sbi_progressBar">50</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">50<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Web Design
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig10" class="sbi_progressBar">90</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">90<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								UI/UX
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="sb_item" id="Plug">
@@ -205,11 +263,30 @@
 						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
 						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
 					</div>
-					<div class="sbi_infographic">
-						
+					<div class="sbi_bars">
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig9" class="sbi_progressBar">75</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">75<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Branding
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig8" class="sbi_progressBar">70</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">70<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								Web Design
+							</p>
+						</div>
+						<div class="sbi_infographic">
+							<canvas height="130" width="130" id="sbi_ig7" class="sbi_progressBar">80</canvas>
+							<div class="circle1"><p class="sbi_infographic_percent">80<span>%</span></p></div>
+							<p class="sbi_infographic_description">
+								UI/UX
+							</p>
+						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -923,7 +1000,7 @@
 	<script src="script/scrollNav.js"></script>
 	<script src="script/serviceAcordion.js"></script>
 	<script src="script/aboutAcordion.js"></script>
-	<script src="script/circularProgressBar.js"></script>
+	<!-- <script src="script/circularProgressBar.js"></script> -->
 	<script src="script/filterSelection.js"></script>
 	<script src="script/teamSlider.js"></script>
 	<script src="script/testimonialsSlider.js"></script>
