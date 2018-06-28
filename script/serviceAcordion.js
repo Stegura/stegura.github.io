@@ -48,7 +48,7 @@ $(window).load(function(){
       scrollTop = $(window).scrollTop();
        $('.counter').html(scrollTop);
 
-      if (scrollTop >= el) {
+      if (scrollTop == el) {
         document.getElementById("defaultOpenService").click();
       }       
     }); 

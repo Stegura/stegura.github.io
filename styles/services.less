@@ -4,7 +4,16 @@
 	padding-bottom: 114px;
 	&_block {
 		display: flex;
-		margin: 0 auto;
+		justify-content: center;
+		margin: 0 10px;
+		max-width: 1200px;
+
+		@media screen and (max-width: 982px) {
+			flex-direction: column-reverse;
+		}
+		@media screen and (max-width: 442px) {
+			margin: unset;
+		}
 	}
 }
 
@@ -12,18 +21,14 @@
 	&menu {
 		width: 60px;
 		margin-top: 45px;
-		margin-left: 83px;
-		@media screen and (max-width: 768px){
+		@media screen and (max-width: 982px){
 			display: flex;
 			justify-content: space-around;
 			margin: 45px auto 0;
 			width: 300px;
 
 		}
-	}	
-	&menu {
 		button {
-			cursor: pointer;
 			color: @colorWhite;
 			font-size: 30px;
 			background-color: @colorLightGray;
@@ -40,34 +45,69 @@
 				background-color: @colorTurquoise;
 			}
 		}
-	}
+	}	
 	
 	&item {
 		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		margin-left: 38px;
 		margin-top: 14px;
+		width: 945px;
+		max-width: 945px;
+		@media screen and (max-width: 982px) {
+			margin-left: 0;
+			width: unset;
+		}
+		@media screen and (max-width: 886px) {
+			flex-direction: column-reverse;
+		}
 	}
 }
 .sbi_ {
 	&text {
-		width: 455px;
+		width: 404px;
+		@media screen and (max-width: 886px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 572px) {
+			width: 100%;
+		}
 		p {
 			letter-spacing: 1px;
 			line-height: 2em;
+			@media screen and (max-width: 886px) {
+				text-align: center;
+			}
 		}
 		h4+p {
 			padding-bottom: 15px;
+		}
+		h4 {
+			@media screen and (max-width: 886px) {
+				text-align: center;
+			}
 		}
 	}
 	&bars {
 		display: flex;
 		justify-content: space-between;
-		margin-left: 80px;
 		width: 454px;
+		@media screen and (max-width: 886px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 572px) {
+			width: 100%;
+		}
+		@media screen and (max-width: 442px) {
+			flex-direction: column;
+		}
 	}
 	&infographic {
-		width: 140px;
 		position: relative;
+		@media screen and (max-width: 442px) {
+			margin: 0 auto;
+		}
 		canvas {
 			background-color: @colorTurquoise;
 			z-index: 9;
