@@ -2485,7 +2485,8 @@ body {
 }
 body input,
 body textarea,
-body button:active {
+body button:active,
+body button:focus {
   outline: none;
 }
 h1 {
