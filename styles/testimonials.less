@@ -33,12 +33,15 @@
             &_avatar {
                 background: url("../images/testimonials/avatar1.jpg") center / cover;
                 border-radius: 50%;
+                flex-shrink: 0;
                 height: 130px;
-                margin-top: 12px;
+                margin: 12px 0 12px;
                 width: 130px;
             }
             &_client {
+                flex-shrink: 2;
                 max-width: 792px;
+                margin-left: 10px;
                 &_feadback {
                     line-height: 28px;
                 }
@@ -56,6 +59,10 @@
                     margin: 0;
                     text-transform: uppercase;
                 }
+            }
+            @media screen and (max-width: 628px) {
+                align-items: center;
+                flex-direction: column;                
             }
         }
     }

@@ -60,6 +60,9 @@
                     color: @colorTurquoise;
                 }
             }
+            @media screen and (max-width: 596px) {
+                margin: 54px auto 0;
+            }
         }
         
         &_menu {
@@ -73,6 +76,13 @@
             right: 2%;
             .active {
                 background-color: @colorCasper;
+            }
+            @media screen and (max-width: 774px) {
+                flex-direction: row;
+                height: 10px;
+                width: 60px;
+                position: unset;
+                margin: 30px auto 0;
             }
         }
         &_selectButton {

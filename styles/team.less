@@ -135,6 +135,13 @@
             p {
                 padding-right: 66px;
             }
+            @media screen and (max-width: 638px) {
+                width: 288px;
+            }
+        }
+        @media screen and (max-width: 638px) {
+            align-items: center;
+            flex-direction: column;
         }
     } 
     #team_member_ {
@@ -170,7 +177,12 @@
             .button {
                 height: 38px;
                 line-height: 38px;
-                margin: 0 auto;   
+                margin: 0 auto; 
+                transition: all .3s;
+                &:hover {
+                    background-color: @colorLightGray;
+                    transition: all .3s;
+                }  
             }
         }    
     }
