@@ -1,2 +1,0 @@
-# myFirstPage
-My first page
