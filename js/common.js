@@ -189,3 +189,78 @@ document.getElementById("defaultOpenBlogItem").click();
 function mapHoverDown(event, mapHoverOff) {
     document.getElementById(mapHoverOff).style.top = "100%";
 }
+
+// scroll buttons
+
+$('#scrollDown').click(function(){
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top
+    }, 1000);
+})
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+
+
+$('#moreBtn').click(function(){
+    $('#lessBtn').removeClass('hide');
+    $('#moreBtn').addClass('hide');
+    $('.more_desc').removeClass('hide');
+});
+
+$('#lessBtn').click(function(){
+    $('#moreBtn').removeClass('hide');
+    $('#lessBtn').addClass('hide');
+    $('.more_desc').addClass('hide');
+});
+
+//modal window
+
+document.getElementById('openWorksModal').onclick = function(){
+    document.getElementById('WorksModal').style.display = "block";
+};
+
+document.getElementById('closeWorksModal').onclick = function(){
+    document.getElementById('WorksModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('WorksModal')) {
+        document.getElementById('WorksModal').style.display = "none";
+    }
+}
+
+document.getElementById('openPortfolioModal').onclick = function(){
+    document.getElementById('PortfolioModal').style.display = "block";
+};
+
+document.getElementById('closePortfolioModal').onclick = function(){
+    document.getElementById('PortfolioModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('PortfolioModal')) {
+        document.getElementById('PortfolioModal').style.display = "none";
+    }
+}
+
+document.getElementById('openTeamModal').onclick = function(){
+    document.getElementById('TeamModal').style.display = "block";
+};
+
+document.getElementById('closeTeamModal').onclick = function(){
+    document.getElementById('TeamModal').style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('TeamModal')) {
+        document.getElementById('TeamModal').style.display = "none";
+    }
+}

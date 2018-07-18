@@ -27,25 +27,25 @@
 				<nav>
 					<ul class="menu">
 						<li class="menu_important">
-							<a href="#">Hello</a>
+							<a href="#about">Hello</a>
 						</li>
 						<li class="menu_not-important">
-							<a href="#">About</a>
+							<a href="#about_details">About</a>
 						</li>
 						<li class="menu_important">
-							<a href="#">Services</a>
+							<a href="#services">Services</a>
 						</li>
 						<li class="menu_not-important">
-							<a href="#">Portfolio</a>
+							<a href="#portfolio">Portfolio</a>
 						</li>
 						<li class="menu_important">
-							<a href="#">Team</a>
+							<a href="#team">Team</a>
 						</li>
 						<li class="menu_not-important">
-							<a href="#">Blog</a>
+							<a href="#blog">Blog</a>
 						</li>
 						<li class="menu_important">
-							<a href="#">Contact</a>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -54,22 +54,28 @@
 				<h1>We are code cafe</h1>
 				<h2>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</h2>
 			</div>
-			<a href="#" class="scroll_button"><span class="pe-7s-angle-down"></span></a>
+			<a href="#" id="scrollDown" class="scroll_button"><span class="pe-7s-angle-down"></span></a>
 		</div>
 	</header>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container flex">
 			<div class="about_text">
 				<h3>This is Bouncy</h3>
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-				<div class="button">
-					<a href="#">read more</a>	
+				<p class="more_desc hide">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse quidem dolores ipsa molestiae minus eaque mollitia fuga quis dolorem corrupti magni reiciendis beatae laboriosam nobis labore repellendus. Molestiae, quo!
+				</p>
+				<div class="button hide" id="lessBtn">
+					read less
+				</div>
+				<div class="button" id="moreBtn">
+					read more	
 				</div>
 			</div>
 			<img src="images/ipad.png" class="ipad">
 		</div>
 	</section>
-	<section class="about_details">
+	<section class="about_details" id="about_details">
 		<div class="container">
 			<div class="section_title">
 				<h3>DetailS ABOUT BOUNCy</h3>
@@ -146,13 +152,24 @@
 		<div class="works_footer clearfix">
 			<div class="container">
 				<h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h3>
-				<div class="button">
-					<a href="#">Sumbit Now</a>
+				<div class="button" id="openWorksModal">
+					Submit Now
+				</div>
+				<div class="modal" id="WorksModal">
+					<div class="modal_content">
+						<span class="pe-7s-close-circle" id="closeWorksModal"></span>
+						<form action="/">
+							<input class="modal_item" type="text" name="name" placeholder="Your name">
+							<input class="modal_item" type="email" name="email" placeholder="Your email">
+							<input class="modal_item" type="phone" name="phone" placeholder="Your phone">
+							<input class="modal_item" type="submit" value="submit">
+						</form>
+					</div>	
 				</div>
 			</div>	
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="section_title">
 				<h3>OUR SERVICES</h3>
@@ -301,7 +318,7 @@
 			<img src="images/mac.png" alt="">
 		</div>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="section_title">
 				<h3>The portfolio</h3>
@@ -493,14 +510,25 @@
 					<p>
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
 					</p>
-					<div class="button">
-						<a href="#">Start Project</a>
+					<div class="button" id="openPortfolioModal">
+						Start Project
 					</div>
 				</div>
 			</div>
+			<div class="modal" id="PortfolioModal">
+				<div class="modal_content">
+					<span class="pe-7s-close-circle" id="closePortfolioModal"></span>
+					<form action="/">
+						<input class="modal_item" type="text" name="name" placeholder="Your name">
+						<input class="modal_item" type="email" name="email" placeholder="Your email">
+						<input class="modal_item" type="phone" name="phone" placeholder="Your phone">
+						<input class="modal_item" type="submit" value="submit">
+					</form>
+				</div>	
+			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section class="team" id="team">
 		<div class="container">
 			<div class="section_title">
 				<h3>the team</h3>
@@ -628,12 +656,25 @@
   				  	<button class="team_slider_selectButton" onclick="openTeamItem(event, 'team_member_3')"></button>
   				</div>
 			</div>
+			<div class="modal" id="TeamModal">
+				<div class="modal_content">
+					<span class="pe-7s-close-circle" id="closeTeamModal"></span>
+					<form action="/">
+						<input class="modal_item" type="text" name="name" placeholder="Your name">
+						<input class="modal_item" type="email" name="email" placeholder="Your email">
+						<input class="modal_item" type="phone" name="phone" placeholder="Your phone">
+						<input class="modal_item" type="submit" value="submit">
+					</form>
+				</div>	
+			</div>
 		</div>
 		<div class="team_footer">
 			<div>
 				<p>Already Loved Us? Let's talk!</p>
-				<div class="button"><a href="#">Contact Us</a></div> 
+				<div class="button" id="openTeamModal">Contact Us</div> 
+				
 			</div>
+			
 		</div>
 	</section>
 	<section class="testimonials">
@@ -693,7 +734,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="blog">
+	<section class="blog" id="blog">
 		<div class="container">
 			<div id="news_1" class="blog_item">
 				<div class="blog_item_title">
@@ -932,7 +973,7 @@
 			</form>
 		</div>	
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="section_title">
 				<h3>contackt us</h3>
